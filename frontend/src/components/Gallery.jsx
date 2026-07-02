@@ -15,27 +15,24 @@ export const Gallery = () => {
         <p className="text-base lg:text-lg text-ink/65 leading-relaxed mt-4">{t.atmosphere.subtitle}</p>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-6 md:auto-rows-[260px]">
-        {imgs.map((src, i) => {
-          const cls = ["md:col-span-2 md:row-span-2", "md:col-span-2", "md:col-span-2", "md:col-span-2", "md:col-span-2"][i] || "md:col-span-2";
-          return (
-            <motion.div
-              key={i}
-              data-testid={`gallery-image-${i}`}
-              initial={{ opacity: 0, scale: 0.96 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.7, delay: (i % 3) * 0.08 }}
-              className={`overflow-hidden rounded-[1.75rem] group h-64 md:h-auto ${cls}`}
-            >
-              <img
-                src={src}
-                alt={`ArtJoga atmosphere ${i + 1}`}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-            </motion.div>
-          );
-        })}
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-6">
+        {imgs.map((src, i) => (
+          <motion.div
+            key={i}
+            data-testid={`gallery-image-${i}`}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.7, delay: (i % 3) * 0.08 }}
+            className="mb-4 md:mb-6 overflow-hidden rounded-[1.75rem] group break-inside-avoid"
+          >
+            <img
+              src={src}
+              alt={`ArtJoga atmosphere ${i + 1}`}
+              className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+            />
+          </motion.div>
+        ))}
       </div>
     </section>
   );
