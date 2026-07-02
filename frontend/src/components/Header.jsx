@@ -5,8 +5,9 @@ import { Menu, X } from "lucide-react";
 const navItems = [
   { id: "about", key: "about" },
   { id: "why", key: "why" },
-  { id: "benefits", key: "benefits" },
-  { id: "gallery", key: "gallery" },
+  { id: "state", key: "state" },
+  { id: "formats", key: "formats" },
+  { id: "atmosphere", key: "atmosphere" },
   { id: "reviews", key: "reviews" },
   { id: "faq", key: "faq" },
 ];
@@ -43,13 +44,13 @@ export const Header = () => {
           Art<span className="text-terracotta">Joga</span>
         </button>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navItems.map((item) => (
             <button
               key={item.id}
               data-testid={`nav-${item.id}`}
               onClick={() => scrollTo(item.id)}
-              className="text-sm font-medium text-ink/70 hover:text-terracotta transition-colors duration-300"
+              className="text-sm font-medium text-ink/70 hover:text-terracotta transition-colors duration-300 whitespace-nowrap"
             >
               {t.nav[item.key]}
             </button>

@@ -8,10 +8,11 @@ export const Gallery = () => {
   const { t } = useLang();
   const imgs = IMAGES.gallery;
   return (
-    <section id="gallery" className="py-24 md:py-32 px-6 md:px-12 lg:px-24">
+    <section id="atmosphere" className="py-24 md:py-32 px-6 md:px-12 lg:px-24">
       <Reveal className="max-w-2xl mb-14">
-        <Overline>{t.gallery.tag}</Overline>
-        <h2 className="font-serif text-4xl sm:text-5xl tracking-tight text-ink mt-4">{t.gallery.title}</h2>
+        <Overline>{t.atmosphere.tag}</Overline>
+        <h2 className="font-serif text-4xl sm:text-5xl tracking-tight text-ink mt-4">{t.atmosphere.title}</h2>
+        <p className="text-base lg:text-lg text-ink/65 leading-relaxed mt-4">{t.atmosphere.subtitle}</p>
       </Reveal>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[200px] md:auto-rows-[260px]">

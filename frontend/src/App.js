@@ -8,6 +8,7 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { WhyUs } from "@/components/WhyUs";
 import { Benefits } from "@/components/Benefits";
+import { Formats } from "@/components/Formats";
 import { Gallery } from "@/components/Gallery";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
@@ -38,6 +39,7 @@ function App() {
           <About />
           <WhyUs />
           <Benefits />
+          <Formats />
           <Gallery />
           <Testimonials />
           <FAQ />

@@ -1,14 +1,15 @@
 import React from "react";
 import { useLang } from "../i18n";
-import { Instagram, Send, Mail, Phone } from "lucide-react";
+import { Instagram, Send, MessageCircle, Mail, Phone } from "lucide-react";
 
 export const Footer = () => {
-  const { t, lang } = useLang();
+  const { t } = useLang();
   const contacts = [
-    { icon: Instagram, label: "Instagram", value: "@artjoga", href: "https://instagram.com", id: "instagram" },
-    { icon: Send, label: "Telegram", value: "@artjoga", href: "https://t.me/artjoga", id: "telegram" },
-    { icon: Mail, label: "Email", value: "hello@artjoga.com", href: "mailto:hello@artjoga.com", id: "email" },
-    { icon: Phone, label: lang === "en" ? "Phone" : "Телефон", value: "+000 000 0000", href: "tel:+0000000000", id: "phone" },
+    { icon: Send, label: "Telegram", value: "artjoga_com", href: "https://t.me/artjoga_com", id: "telegram" },
+    { icon: MessageCircle, label: "WhatsApp", value: "+48 884 021 063", href: "https://wa.me/48884021063", id: "whatsapp" },
+    { icon: Instagram, label: "Instagram", value: "artjoga_com", href: "https://instagram.com/artjoga_com", id: "instagram" },
+    { icon: Mail, label: "Email", value: "info.artjoga@gmail.com", href: "mailto:info.artjoga@gmail.com", id: "email" },
+    { icon: Phone, label: t.footer.contacts === "Contacts" ? "Phone" : "Телефон", value: "+48 884 021 063", href: "tel:+48884021063", id: "phone" },
   ];
 
   return (

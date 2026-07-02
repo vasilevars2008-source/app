@@ -29,12 +29,14 @@ export const Hero = () => {
           >
             {t.hero.slogan}
           </motion.p>
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.35 }}
-            className="text-base lg:text-lg text-ink/60 leading-relaxed mt-6 max-w-xl"
+            className="space-y-4 mt-6 max-w-xl"
           >
-            {t.hero.desc}
-          </motion.p>
+            {t.hero.desc.map((p, i) => (
+              <p key={i} className="text-base lg:text-lg text-ink/60 leading-relaxed">{p}</p>
+            ))}
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.45 }}
             className="flex flex-wrap gap-4 mt-9"

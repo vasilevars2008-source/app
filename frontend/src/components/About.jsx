@@ -4,7 +4,7 @@ import { IMAGES } from "../assets";
 import { Reveal, Overline } from "./Reveal";
 
 export const About = () => {
-  const { t, lang } = useLang();
+  const { t } = useLang();
   return (
     <section id="about" className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-sand-100/40">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -34,12 +34,12 @@ export const About = () => {
           </p>
           <div className="flex gap-10 mt-10">
             <div>
-              <p className="font-serif text-4xl text-terracotta">500+</p>
-              <p className="text-sm text-ink/55 mt-1">{lang === "en" ? "Classes" : "Занятий"}</p>
+              <p className="font-serif text-4xl text-terracotta">{t.about.stat1.num}</p>
+              <p className="text-sm text-ink/55 mt-1">{t.about.stat1.label}</p>
             </div>
             <div>
-              <p className="font-serif text-4xl text-terracotta">8+</p>
-              <p className="text-sm text-ink/55 mt-1">{lang === "en" ? "Years" : "Лет практики"}</p>
+              <p className="font-serif text-4xl text-terracotta">{t.about.stat2.num}</p>
+              <p className="text-sm text-ink/55 mt-1">{t.about.stat2.label}</p>
             </div>
           </div>
         </Reveal>

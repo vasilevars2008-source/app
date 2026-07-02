@@ -31,6 +31,18 @@ export const FAQ = () => {
               </AccordionItem>
             ))}
           </Accordion>
+
+          <div className="mt-10 bg-sand-100/60 rounded-3xl p-8 border border-sand-100">
+            <p className="font-serif text-xl md:text-2xl text-ink">{t.faq.closingTitle}</p>
+            <p className="text-base lg:text-lg text-ink/65 leading-relaxed mt-3">{t.faq.closingText}</p>
+            <button
+              data-testid="faq-cta-button"
+              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              className="mt-6 bg-ink text-sand-50 rounded-full px-7 py-3 text-sm font-medium hover:bg-terracotta transition-colors duration-300"
+            >
+              {t.contact.submit}
+            </button>
+          </div>
         </Reveal>
       </div>
     </section>
