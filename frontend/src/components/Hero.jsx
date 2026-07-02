@@ -67,7 +67,7 @@ export const Hero = () => {
             data-testid="hero-image"
             src={IMAGES.hero}
             alt="Kundalini Yoga teacher"
-            className="w-full h-[440px] md:h-[600px] object-cover rounded-[2rem] shadow-sm"
+            className="w-full aspect-[3/4] md:aspect-[2/3] object-cover object-top rounded-[2rem] shadow-sm"
           />
         </motion.div>
       </div>
