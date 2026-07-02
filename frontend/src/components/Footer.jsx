@@ -9,7 +9,7 @@ export const Footer = () => {
     { icon: MessageCircle, label: "WhatsApp", value: "+48 884 021 063", href: "https://wa.me/48884021063", id: "whatsapp" },
     { icon: Instagram, label: "Instagram", value: "artjoga_com", href: "https://instagram.com/artjoga_com", id: "instagram" },
     { icon: Mail, label: "Email", value: "info.artjoga@gmail.com", href: "mailto:info.artjoga@gmail.com", id: "email" },
-    { icon: Phone, label: t.footer.contacts === "Contacts" ? "Phone" : "Телефон", value: "+48 884 021 063", href: "tel:+48884021063", id: "phone" },
+    { icon: Phone, label: t.footer.phone, value: "+48 884 021 063", href: "tel:+48884021063", id: "phone" },
   ];
 
   return (

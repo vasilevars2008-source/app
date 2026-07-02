@@ -60,7 +60,7 @@ export const Header = () => {
 
         <div className="flex items-center gap-4">
           <div className="flex items-center text-sm font-medium border border-sand-200 rounded-full overflow-hidden">
-            {["ru", "en"].map((l) => (
+            {["ru", "en", "pl"].map((l) => (
               <button
                 key={l}
                 data-testid={`lang-${l}`}
