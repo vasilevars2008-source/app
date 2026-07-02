@@ -3,7 +3,6 @@ export const IMAGES = {
   about: "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/e1qyt5xq_image.png",
   gallery: [
     "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/mjqsqfi7_image.png",
-    "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/fpbtzpnn_image.png",
     "https://images.unsplash.com/photo-1628826821015-6df48acb4aa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxzZXJlbmUlMjBuYXR1cmUlMjBmb3Jlc3QlMjBtb3JuaW5nJTIwbGlnaHQlMjBjYWxtfGVufDB8fHx8MTc4Mjk5MTMyNnww&ixlib=rb-4.1.0&q=85",
     "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/4c1h06fd_image.png",
   ],
