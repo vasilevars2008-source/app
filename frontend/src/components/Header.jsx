@@ -10,6 +10,7 @@ const navItems = [
   { id: "atmosphere", key: "atmosphere" },
   { id: "reviews", key: "reviews" },
   { id: "faq", key: "faq" },
+  { id: "contacts", key: "contacts" },
 ];
 
 export const Header = () => {
@@ -44,7 +45,7 @@ export const Header = () => {
           Art<span className="text-terracotta">Joga</span>
         </button>
 
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+        <nav className="hidden xl:flex items-center gap-5 xl:gap-6">
           {navItems.map((item) => (
             <button
               key={item.id}
@@ -83,7 +84,7 @@ export const Header = () => {
 
           <button
             data-testid="mobile-menu-toggle"
-            className="lg:hidden text-ink"
+            className="xl:hidden text-ink"
             onClick={() => setOpen(!open)}
             aria-label="Menu"
           >
@@ -93,7 +94,7 @@ export const Header = () => {
       </div>
 
       {open && (
-        <nav className="lg:hidden mt-4 px-6 pb-6 flex flex-col gap-1 bg-sand-50/95 backdrop-blur-xl">
+        <nav className="xl:hidden mt-4 px-6 pb-6 flex flex-col gap-1 bg-sand-50/95 backdrop-blur-xl">
           {navItems.map((item) => (
             <button
               key={item.id}

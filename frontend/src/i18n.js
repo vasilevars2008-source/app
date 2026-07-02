@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 
 export const translations = {
   ru: {
-    nav: { about: "О преподавателе", why: "Почему ArtJoga", state: "Состояние", formats: "Форматы", atmosphere: "Атмосфера", reviews: "Отзывы", faq: "Вопросы", book: "Записаться" },
+    nav: { about: "О преподавателе", why: "Почему ArtJoga", state: "Состояние", formats: "Форматы", atmosphere: "Атмосфера", reviews: "Отзывы", faq: "Вопросы", contacts: "Контакты", book: "Записаться" },
     hero: {
       tag: "Kundalini Yoga Studio",
       title: "Kundalini Yoga for Body, Mind & Soul",
@@ -117,7 +117,7 @@ export const translations = {
     },
   },
   en: {
-    nav: { about: "About", why: "Why ArtJoga", state: "State", formats: "Formats", atmosphere: "Atmosphere", reviews: "Reviews", faq: "FAQ", book: "Book Now" },
+    nav: { about: "About", why: "Why ArtJoga", state: "State", formats: "Formats", atmosphere: "Atmosphere", reviews: "Reviews", faq: "FAQ", contacts: "Contacts", book: "Book Now" },
     hero: {
       tag: "Kundalini Yoga Studio",
       title: "Kundalini Yoga for Body, Mind & Soul",

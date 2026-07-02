@@ -13,7 +13,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer data-testid="site-footer" className="bg-ink text-sand-50 pt-24 md:pt-32 pb-12 px-6 md:px-12 lg:px-24">
+    <footer id="contacts" data-testid="site-footer" className="bg-ink text-sand-50 pt-24 md:pt-32 pb-12 px-6 md:px-12 lg:px-24">
       <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
         <div>
           <p className="font-serif text-4xl tracking-tight">Art<span className="text-terracotta">Joga</span></p>
