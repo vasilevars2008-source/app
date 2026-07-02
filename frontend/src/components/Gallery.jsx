@@ -15,12 +15,9 @@ export const Gallery = () => {
         <p className="text-base lg:text-lg text-ink/65 leading-relaxed mt-4">{t.atmosphere.subtitle}</p>
       </Reveal>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[200px] md:auto-rows-[260px]">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-6 md:auto-rows-[260px]">
         {imgs.map((src, i) => {
-          const span = [
-            "row-span-2", "", "", "row-span-2",
-            "", "",
-          ][i] || "";
+          const cls = ["md:col-span-2 md:row-span-2", "md:col-span-2", "md:col-span-2", "md:col-span-2", "md:col-span-2"][i] || "md:col-span-2";
           return (
             <motion.div
               key={i}
@@ -28,8 +25,8 @@ export const Gallery = () => {
               initial={{ opacity: 0, scale: 0.96 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.7, delay: (i % 4) * 0.08 }}
-              className={`overflow-hidden rounded-[1.75rem] group ${span}`}
+              transition={{ duration: 0.7, delay: (i % 3) * 0.08 }}
+              className={`overflow-hidden rounded-[1.75rem] group h-64 md:h-auto ${cls}`}
             >
               <img
                 src={src}
