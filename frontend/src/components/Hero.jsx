@@ -69,10 +69,6 @@ export const Hero = () => {
             alt="Kundalini Yoga teacher"
             className="w-full h-[440px] md:h-[600px] object-cover rounded-[2rem] shadow-sm"
           />
-          <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md bg-sand-50/70 rounded-2xl px-6 py-4 border border-white/40">
-            <p className="font-serif text-lg text-ink">ArtJoga</p>
-            <p className="text-xs text-ink/60 tracking-wide">Body · Mind · Soul</p>
-          </div>
         </motion.div>
       </div>
     </section>
