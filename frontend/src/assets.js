@@ -2,11 +2,11 @@ export const IMAGES = {
   hero: "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/gcpkfkn8_image.png",
   about: "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/e1qyt5xq_image.png",
   gallery: [
-    "https://images.unsplash.com/photo-1766585464570-abb62d6cf7da?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHx6ZW4lMjBuYXR1cmUlMjBhZXN0aGV0aWNzJTIwY2FsbSUyMHNhbmR8ZW58MHx8fHwxNzgyODU0NzQ5fDA&ixlib=rb-4.1.0&q=85",
-    "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHx5b2dhJTIwbmF0dXJlJTIwY2FsbSUyMHdlbGxuZXNzfGVufDB8fHx8MTc4Mjg1NDgxOXww&ixlib=rb-4.1.0&q=85",
+    "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/mjqsqfi7_image.png",
     "https://images.unsplash.com/photo-1772311286630-4cc7d99bc1a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHx6ZW4lMjBuYXR1cmUlMjBhZXN0aGV0aWNzJTIwY2FsbSUyMHNhbmR8ZW58MHx8fHwxNzgyODU0NzQ5fDA&ixlib=rb-4.1.0&q=85",
-    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHx5b2dhJTIwbmF0dXJlJTIwY2FsbSUyMHdlbGxuZXNzfGVufDB8fHx8MTc4Mjg1NDgxOXww&ixlib=rb-4.1.0&q=85",
     "https://images.unsplash.com/photo-1524863479829-916d8e77f114?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHw0fHx5b2dhJTIwbmF0dXJlJTIwY2FsbSUyMHdlbGxuZXNzfGVufDB8fHx8MTc4Mjg1NDgxOXww&ixlib=rb-4.1.0&q=85",
+    "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/4c1h06fd_image.png",
+    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHx5b2dhJTIwbmF0dXJlJTIwY2FsbSUyMHdlbGxuZXNzfGVufDB8fHx8MTc4Mjg1NDgxOXww&ixlib=rb-4.1.0&q=85",
     "https://images.unsplash.com/photo-1781426206554-0c034bbc92c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHw0fHx6ZW4lMjBuYXR1cmUlMjBhZXN0aGV0aWNzJTIwY2FsbSUyMHNhbmR8ZW58MHx8fHwxNzgyODU0NzQ5fDA&ixlib=rb-4.1.0&q=85",
   ],
   testimonials: [
