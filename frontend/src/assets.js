@@ -4,10 +4,8 @@ export const IMAGES = {
   gallery: [
     "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/mjqsqfi7_image.png",
     "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/fpbtzpnn_image.png",
-    "https://images.unsplash.com/photo-1524863479829-916d8e77f114?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHw0fHx5b2dhJTIwbmF0dXJlJTIwY2FsbSUyMHdlbGxuZXNzfGVufDB8fHx8MTc4Mjg1NDgxOXww&ixlib=rb-4.1.0&q=85",
-    "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/4c1h06fd_image.png",
     "https://images.unsplash.com/photo-1628826821015-6df48acb4aa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxzZXJlbmUlMjBuYXR1cmUlMjBmb3Jlc3QlMjBtb3JuaW5nJTIwbGlnaHQlMjBjYWxtfGVufDB8fHx8MTc4Mjk5MTMyNnww&ixlib=rb-4.1.0&q=85",
-    "https://images.unsplash.com/photo-1603346996604-cd77fc859e1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxzZXJlbmUlMjBuYXR1cmUlMjBmb3Jlc3QlMjBtb3JuaW5nJTIwbGlnaHQlMjBjYWxtfGVufDB8fHx8MTc4Mjk5MTMyNnww&ixlib=rb-4.1.0&q=85",
+    "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/4c1h06fd_image.png",
   ],
   testimonials: [
     "https://images.unsplash.com/photo-1778109303745-8a5d68af26b4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMHNlcmVuZSUyMHdvbWFuJTIwbmF0dXJhbCUyMGxpZ2h0fGVufDB8fHx8MTc4Mjg1NDc0OXww&ixlib=rb-4.1.0&q=85",
