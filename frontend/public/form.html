@@ -4,11 +4,6 @@
   <meta charset="UTF-8">
   <title>Записаться</title>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    (function() {
-      emailjs.init("FfwQq2QSyhR8qXcwk");
-    })();
-  </script>
   <style>
     body { font-family: sans-serif; background: #f8f6f1; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
     .form { background: white; padding: 40px; border-radius: 30px; max-width: 500px; width: 100%; }
@@ -35,13 +30,22 @@ document.getElementById('form').addEventListener('submit', function(e) {
   e.preventDefault();
   const status = document.getElementById('status');
   status.textContent = 'Отправка...';
-  emailjs.sendForm('service_pz1r1qn', 'template_n7w7mqz', this)
+
+  const templateParams = {
+    name: this.name.value,
+    phone: this.phone.value,
+    email: this.email.value,
+    message: this.message.value
+  };
+
+  emailjs.send('service_pz1r1qn', 'template_n7w7mqz', templateParams, 'FfwQq2QSyhR8qXcwk')
     .then(() => {
       status.textContent = '✅ Заявка отправлена!';
       this.reset();
     })
-    .catch(() => {
+    .catch((error) => {
       status.textContent = '❌ Ошибка. Попробуйте позже.';
+      console.error(error);
     });
 });
 </script>
