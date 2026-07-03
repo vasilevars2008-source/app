@@ -29,11 +29,11 @@ export const Contact = () => {
         templateParams,
         "FfwQq2QSyhR8qXcwk"
       );
-      toast.success(t.contact.success || "Заявка отправлена!");
+      toast.success("Заявка отправлена!");
       setForm({ name: "", phone: "", email: "", message: "" });
     } catch (err) {
       console.error(err);
-      toast.error(t.contact.error || "Ошибка отправки. Попробуйте позже.");
+      toast.error("Ошибка отправки. Попробуйте позже.");
     } finally {
       setLoading(false);
     }
@@ -84,7 +84,7 @@ export const Contact = () => {
               disabled={loading}
               className="w-full bg-ink text-sand-50 rounded-full px-8 py-4 font-medium hover:bg-terracotta transition-colors duration-300 disabled:opacity-60"
             >
-              {loading ? t.contact.sending : t.contact.submit}
+              {loading ? "Отправка..." : "Записаться"}
             </button>
           </form>
         </Reveal>
