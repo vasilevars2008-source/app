@@ -68,7 +68,15 @@ export const Contact = () => {
             </div>
             <div>
               <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact.message}</label>
-              <textarea data-testid="booking-message" name="message" rows={4} value={form.message} onChange={onChange} className={${inputCls} resize-none} placeholder="..." />
+              <textarea
+                data-testid="booking-message"
+                name="message"
+                rows={4}
+                value={form.message}
+                onChange={onChange}
+                className={${inputCls} resize-none}
+                placeholder="..."
+              />
             </div>
             <button
               data-testid="booking-submit"
