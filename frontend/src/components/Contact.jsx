@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import axios from "axios";
+import emailjs from "emailjs-com";
 import { useLang } from "../i18n";
 import { Reveal, Overline } from "./Reveal";
 import { toast } from "sonner";
-
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 export const Contact = () => {
   const { t } = useLang();
@@ -16,12 +14,26 @@ export const Contact = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+
+    const templateParams = {
+      name: form.name,
+      phone: form.phone,
+      email: form.email,
+      message: form.message,
+    };
+
     try {
-      await axios.post(`${API}/bookings`, form);
-      toast.success(t.contact.success);
+      await emailjs.send(
+        "service_pz1r1qn",
+        "template_n7w7mqz",
+        templateParams,
+        "FfwQq2QSyhR8qXcwk"
+      );
+      toast.success(t.contact.success || "Заявка отправлена!");
       setForm({ name: "", phone: "", email: "", message: "" });
     } catch (err) {
-      toast.error(t.contact.error);
+      console.error(err);
+      toast.error(t.contact.error || "Ошибка отправки. Попробуйте позже.");
     } finally {
       setLoading(false);
     }
@@ -56,7 +68,7 @@ export const Contact = () => {
             </div>
             <div>
               <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact.message}</label>
-              <textarea data-testid="booking-message" name="message" rows={4} value={form.message} onChange={onChange} className={`${inputCls} resize-none`} placeholder="..." />
+              <textarea data-testid="booking-message" name="message" rows={4} value={form.message} onChange={onChange} className={${inputCls} resize-none} placeholder="..." />
             </div>
             <button
               data-testid="booking-submit"
