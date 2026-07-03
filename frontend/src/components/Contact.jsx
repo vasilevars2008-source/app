@@ -9,7 +9,7 @@ export const Contact = () => {
           Нажмите на кнопку, чтобы перейти к форме записи.
         </p>
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdoHzXBUPBl1Im7u3bVIpImMS_olFuGjJ5MSIrg9A02rRmS8g/viewform?usp=header"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdoHzXBUPBl1Im7u3bVIpImMS_olFuGjJ5MSIrg9A02rRmS8g/viewform?usp=publish-editor"
           className="inline-block mt-8 bg-ink text-sand-50 rounded-full px-10 py-4 font-medium hover:bg-terracotta transition-colors duration-300"
           target="_blank"
           rel="noopener noreferrer"
