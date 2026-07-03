@@ -3,51 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <title>Записаться</title>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
   <style>
-    body { font-family: sans-serif; background: #f8f6f1; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
-    .form { background: white; padding: 40px; border-radius: 30px; max-width: 500px; width: 100%; }
-    input, textarea { width: 100%; padding: 12px; margin: 6px 0 16px; border-radius: 16px; border: 1px solid #ddd; }
-    button { background: #1e1e1e; color: white; border: none; padding: 16px; width: 100%; border-radius: 40px; font-size: 18px; cursor: pointer; }
-    button:hover { background: #b87c5a; }
-    .status { margin-top: 16px; text-align: center; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f8f6f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .form {
+      background: white;
+      padding: 40px;
+      border-radius: 30px;
+      max-width: 500px;
+      width: 100%;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 6px 0 16px;
+      border-radius: 16px;
+      border: 1px solid #ddd;
+    }
+    button {
+      background: #1e1e1e;
+      color: white;
+      border: none;
+      padding: 16px;
+      width: 100%;
+      border-radius: 40px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #b87c5a;
+    }
+    .status {
+      margin-top: 16px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-<div class="form">
-  <h2>✧ Записаться</h2>
-  <form id="form">
-    <label>Имя</label><input type="text" name="name" required>
-    <label>Телефон</label><input type="text" name="phone" required>
-    <label>Email</label><input type="email" name="email" required>
-    <label>Сообщение</label><textarea name="message" rows="4"></textarea>
-    <button type="submit">Записаться</button>
-    <div id="status" class="status"></div>
-  </form>
-</div>
-<script>
-document.getElementById('form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const status = document.getElementById('status');
-  status.textContent = 'Отправка...';
+  <div class="form">
+    <h2>✧ Записаться</h2>
+    <form id="form">
+      <label>Имя</label><input type="text" name="name" required>
+      <label>Телефон</label><input type="text" name="phone" required>
+      <label>Email</label><input type="email" name="email" required>
+      <label>Сообщение</label><textarea name="message" rows="4"></textarea>
+      <button type="submit">Записаться</button>
+      <div id="status" class="status"></div>
+    </form>
+  </div>
+  <script>
+    document.getElementById('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const status = document.getElementById('status');
+      status.textContent = 'Отправка...';
 
-  const templateParams = {
-    name: this.name.value,
-    phone: this.phone.value,
-    email: this.email.value,
-    message: this.message.value
-  };
+      const templateParams = {
+        name: this.name.value,
+        phone: this.phone.value,
+        email: this.email.value,
+        message: this.message.value,
+      };
 
-  emailjs.send('service_pz1r1qn', 'template_n7w7mqz', templateParams, 'FfwQq2QSyhR8qXcwk')
-    .then(() => {
-      status.textContent = '✅ Заявка отправлена!';
-      this.reset();
-    })
-    .catch((error) => {
-      status.textContent = '❌ Ошибка. Попробуйте позже.';
-      console.error(error);
+      emailjs
+        .send('service_pz1r1qn', 'template_n7w7mqz', templateParams, 'FfwQq2QSyhR8qXcwk')
+        .then(() => {
+          status.textContent = '✅ Заявка отправлена!';
+          this.reset();
+        })
+        .catch((err) => {
+          status.textContent = '❌ Ошибка. Попробуйте позже.';
+          console.error(err);
+        });
     });
-});
-</script>
+  </script>
 </body>
 </html>
