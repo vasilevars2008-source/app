@@ -46,28 +46,28 @@ export const Contact = () => {
     <section id="contact" className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-sand-100/40">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         <Reveal>
-          <Overline>{t.contact.tag}</Overline>
-          <h2 className="font-serif text-4xl sm:text-5xl tracking-tight text-ink mt-4">{t.contact.title}</h2>
-          <p className="text-base lg:text-lg text-ink/65 leading-relaxed mt-6 max-w-md">{t.contact.desc}</p>
-          <p className="font-serif italic text-2xl text-terracotta mt-10">{t.footer.slogan}</p>
+          <Overline>{t.contact?.tag || "Запись"}</Overline>
+          <h2 className="font-serif text-4xl sm:text-5xl tracking-tight text-ink mt-4">{t.contact?.title || "Начните свой путь сегодня"}</h2>
+          <p className="text-base lg:text-lg text-ink/65 leading-relaxed mt-6 max-w-md">{t.contact?.desc || "Оставьте заявку, и мы свяжемся с вами."}</p>
+          <p className="font-serif italic text-2xl text-terracotta mt-10">{t.footer?.slogan || "Find Harmony. Feel Love. Live Consciously."}</p>
         </Reveal>
 
         <Reveal delay={0.1}>
           <form data-testid="booking-form" onSubmit={onSubmit} className="bg-white rounded-3xl p-8 md:p-10 border border-sand-100 shadow-sm space-y-5">
             <div>
-              <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact.name}</label>
-              <input data-testid="booking-name" name="name" required value={form.name} onChange={onChange} className={inputCls} placeholder={t.contact.name} />
+              <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact?.name || "Имя"}</label>
+              <input data-testid="booking-name" name="name" required value={form.name} onChange={onChange} className={inputCls} placeholder={t.contact?.name || "Имя"} />
             </div>
             <div>
-              <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact.phone}</label>
+              <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact?.phone || "Телефон"}</label>
               <input data-testid="booking-phone" name="phone" required value={form.phone} onChange={onChange} className={inputCls} placeholder="+ ..." />
             </div>
             <div>
-              <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact.email}</label>
+              <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact?.email || "Email"}</label>
               <input data-testid="booking-email" name="email" type="email" required value={form.email} onChange={onChange} className={inputCls} placeholder="you@email.com" />
             </div>
             <div>
-              <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact.message}</label>
+              <label className="text-sm font-medium text-ink/70 mb-2 block">{t.contact?.message || "Сообщение"}</label>
               <textarea
                 data-testid="booking-message"
                 name="message"
@@ -83,8 +83,8 @@ export const Contact = () => {
               type="submit"
               disabled={loading}
               className="w-full bg-ink text-sand-50 rounded-full px-8 py-4 font-medium hover:bg-terracotta transition-colors duration-300 disabled:opacity-60"
-            >
-              {loading ? "Отправка..." : "Записаться"}
+              >
+              {loading ? "Отправка..." : (t.contact?.submit || "Записаться")}
             </button>
           </form>
         </Reveal>
