@@ -1,5 +1,5 @@
 export const IMAGES = {
-  hero: "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/gcpkfkn8_image.png",
+  hero: "https://i.imgur.com/G98cNux.png",
   about: "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/e1qyt5xq_image.png",
   gallery: [
     "https://customer-assets.emergentagent.com/job_kundalini-flow-2/artifacts/mjqsqfi7_image.png",
